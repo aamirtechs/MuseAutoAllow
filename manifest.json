@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Muse AI Auto-Allow",
+  "version": "2.0",
+  "description": "Automatically clicks Allow buttons. Includes a counter, sound, and toggles.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://muse.ai/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
